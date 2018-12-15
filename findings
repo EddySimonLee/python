@@ -1,9 +1,3 @@
-{
- "cells": [
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
 # by default, 'max' returns the largest of its arguments. 
 # But if we pass in a function using the optional 'key' argument,
 # it returns the argument x that maximizes key(x) (aka the argmax)
@@ -17,7 +11,5 @@ print(
     'Which number is the biggest modulo 5?',
     max(100, 51, 14, key=mod_5),
     sep='\n',
-)
-   ]
-  },
+
 
