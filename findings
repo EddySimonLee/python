@@ -1,3 +1,5 @@
+
+1.조건에 맞는 max/min
 # by default, 'max' returns the largest of its arguments. 
 # But if we pass in a function using the optional 'key' argument,
 # it returns the argument x that maximizes key(x) (aka the argmax)
@@ -11,5 +13,20 @@ print(
     'Which number is the biggest modulo 5?',
     max(100, 51, 14, key=mod_5),
     sep='\n',
+    
+즉 key(조건)를 각 변수에 지정한 값을 반환함
+def smallest_stringy_number(s1, s2, s3):
+    return min(s1,s2,s3,key=int)
+
+이때 s1~s3를 string으로 넣어도, int로 parse하여 계산한 후 결과를 가져다줌
+
+2.lambda의 사용
+f = lambda x,y : x+y
+f(2,3)
+#결과값은 5
+
+3.round 함수에서 condition이 negative 일때
+#round(num, -1) : 10의 자리까지 반올림
+#-2,-3... 가면 100의 자리, 1000의 자리로 반올림한다.
 
 
